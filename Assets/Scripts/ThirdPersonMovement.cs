@@ -18,6 +18,7 @@ public class ThirdPersonMovement : NetworkBehaviour
     private void Awake()
     {
         gameObject.transform.position = new Vector3(0f, 25f, 0f);
+        camTrans = Camera.FindObjectOfType<Camera>().transform;
     }
     void Update()
     {
